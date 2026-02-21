@@ -131,7 +131,7 @@ public class CodigosSecretos {
         return true;
     }
 
-	//===================== INTEGRANTE 4: NIVEL 5 Y FINAL =====================
+	//===================== RAYANE: NIVEL 5 Y FINAL =====================
 	public static boolean nivel5Integrante4() {
     int M = (int) (5 + Math.random() * (10 - 5 + 1));
     int S = (int) (5 + Math.random() * (10 - 5 + 1));
@@ -173,4 +173,5 @@ public class CodigosSecretos {
     System.out.println("Todavía no eres un Maestro Jedi de las Matemáticas. ¡Vuelve a intentarlo!");
     System.out.println("\nGracias por jugar :D");
 	}
+
 }
