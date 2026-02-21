@@ -78,3 +78,31 @@ public class CodigosSecretos {
         }
         return true;
     }
+    
+ // ===================== ALEJO: NIVEL 4 =====================
+    public static boolean nivel4Integrante3() {
+        int P = (int) (10 + Math.random() * (100 - 10 + 1));
+
+        System.out.println("\nNIVEL 4");
+        System.out.println("Si P = " + P + ", introduce 1 si es primo o 0 si no lo es.");
+
+        boolean esPrimo = true;
+        if (P < 2) {
+            esPrimo = false;
+        } else {
+            for (int i = 2; i < P; i++) {
+                if (P % i == 0) {
+                    esPrimo = false;
+                }
+            }
+        }
+
+        int resultadoPrimo = esPrimo ? 1 : 0;
+
+        if (sc.nextInt() != resultadoPrimo) {
+            perder();
+            return false;
+        }
+        return true;
+    }
+}
