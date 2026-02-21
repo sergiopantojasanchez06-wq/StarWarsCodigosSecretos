@@ -40,3 +40,41 @@ public class CodigosSecretos {
         }
         return true;
     }
+    
+    // ===================== ZHUOXUAN: NIVEL 2 Y NIVEL 3 =====================
+    public static boolean nivel2y3Integrante2() {
+        // NIVEL 2
+        int P1 = (int) (1 + Math.random() * 7);
+        int P2 = (int) (8 + Math.random() * (12 - 8 + 1));
+
+        System.out.println("\nNIVEL 2");
+        System.out.println("Calcula el productorio entre " + P1 + " y " + P2 + " (ambos inclusive).");
+
+        long producto = 1;
+        for (int i = P1; i <= P2; i++) {
+            producto *= i;
+        }
+
+        if (sc.nextLong() != producto) {
+            perder();
+            return false;
+        }
+
+        // NIVEL 3
+        int N = (int) (50 + Math.random() * (100 - 50 + 1));
+        int numeroFactorial = N / 10;
+
+        System.out.println("\nNIVEL 3");
+        System.out.println("Si N = " + N + ", calcula el factorial de " + numeroFactorial);
+
+        long factorial = 1;
+        for (int i = 1; i <= numeroFactorial; i++) {
+            factorial *= i;
+        }
+
+        if (sc.nextLong() != factorial) {
+            perder();
+            return false;
+        }
+        return true;
+    }
